@@ -1,0 +1,27 @@
+{
+  "name": "cpu8008-asm",
+  "displayName": "cpu8008-asm",
+  "publisher": "jigwaselk",
+  "description": "Adds highlighting for i8008-5 assembly language",
+  "icon": "icon.png",
+  "version": "0.0.1012",
+  "engines": {
+    "vscode": "^1.1.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cpu8008asm",
+      "aliases": ["8008asm", "cpu8008asm"],
+      "extensions": [".asm8008", ".asm80085", ".i8008", ".8008"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cpu8008asm",
+      "scopeName": "main.asm8008",
+      "path": "./syntaxes/cpu8008asm.tmLanguage.json"
+    }]
+  }
+}
