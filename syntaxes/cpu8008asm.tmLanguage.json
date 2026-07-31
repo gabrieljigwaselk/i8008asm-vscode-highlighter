@@ -32,6 +32,10 @@
         {
           "name": "comment.line.character.cpu8008asm",
           "match": "(?:;|#).*"
+        },
+        {
+          "name": "keyword.control.macro.cpu8008asm",
+          "match": "^%.*"
         }
       ]
     },
